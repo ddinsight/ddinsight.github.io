@@ -1,4 +1,35 @@
-<h2 id="introduction">Introduction</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>DD Insight by ddinsight</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>DD Insight</h1>
+        <h2>Open-source Device-Driven Analytics for Mobile Networks</h2>
+        <a href="https://github.com/ddinsight" class="button"><small>Follow me on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
 <hr>
 
@@ -8,50 +39,62 @@
 
 <p>App providers can identify network problems with analysis data provided by DD insight and use the data to work with network providers to solve problems and enhance network quality for your users.</p>
 
-<p>If you’re the provider of both the app and the network, then you don’t have to entirely rely on monitoring devices on you network which only provides network-side perspective. Rather, you will be able to acquire data on network quality users actually experiences since data is provided by mobile devices themselves. Using this data, you will be able to find ways to enhance both network and services your app provides.</p>
+<p>If you're the provider of both the app and the network, then you don't have to entirely rely on monitoring devices on you network which only provides network-side perspective. Rather, you will be able to acquire data on network quality users actually experiences since data is provided by mobile devices themselves. Using this data, you will be able to find ways to enhance both network and services your app provides.</p>
 
 <p><strong>Who made this?</strong></p>
 
-<p>Jay Lee - dd-analytics/coreBatch and data architecture Lead <br>
-Ethan Lee - dd-analytics all presentation Lead <br>
-Spring Choi - dd-streamworks and dd-collector/collectServer Lead <br>
-Daniel Moon - dd-collector/mobileSDK Lead <br>
-JS Song - DD Insight Product Lead <br>
-Sang Yi - Math components, OSS proejct <br>
+<p>Jay Lee - dd-analytics/coreBatch and data architecture Lead
+Ethan Lee - dd-analytics all presentation Lead
+Spring Choi - dd-streamworks and dd-collector/collectServer Lead
+Daniel Moon - dd-collector/mobileSDK Lead
+JS Song - DD Insight Product Lead
+Sang Yi - Math components, OSS proejct
 Aram Seo - OSS project of dd-analytics/dataview</p>
 
-<h2 id="how-it-works">How It Works</h2>
+<h2>
+<a id="how-it-works" class="anchor" href="#how-it-works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How It Works</h2>
 
 <hr>
 
 <p>The following three major sub-projects comprise DD insight.</p>
 
 <ol>
-<li><p><strong>dd-collector</strong> <br>
+<li><p><strong>dd-collector</strong>
  This is a module that collects and filters logs from smart devices and processes them using distributed system.</p></li>
-<li><p><strong>dd-streamworks</strong> <br>
+<li><p><strong>dd-streamworks</strong>
  This consists of real-time processing of logs and scalable job server.</p></li>
-<li><p><strong>dd-analytics</strong> <br>
-This consists of the batch process module for saved logs and the presentation module. <br>
+<li><p><strong>dd-analytics</strong>
+This consists of the batch process module for saved logs and the presentation module.
 The presentation module is mainly for map-based visualization of output of QoE analysis based on results of batch process (Comprehensive presentation of results of real-time analysis can be provided in a commercial version)</p></li>
 </ol>
 
-<h2 id="links">Links</h2>
+<h2>
+<a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h2>
 
 <hr>
 
 <ul>
 <li><p><a href="">Data Format for Client-side logs</a> : Sample data format for event logs for live video streaming service</p></li>
-<li><p>Sub-projects of DD insights</p>
+<li>
+<p>Sub-projects of DD insights</p>
 
-<ul><li><a href="http://github.com/ddinsight/dd-collector">dd-collector</a> : Collector Front-end Framework</li>
-<li><a href="http://github.com/ddinsight/dd-streamworks">dd-streamworks</a> : Real-time Processing &amp; Job engine</li>
-<li><a href="http://github.com/ddinsight/dd-analytics">dd-analytics</a> : Batch Processing &amp; Presentation</li></ul></li>
-<li><a href="http://github.com/ddinsight/dd-collector/ddapp">Tester App</a> : An android app for testing operation of DD Insight framework</li>
-<li><a href="http://demo.ddinsight.io">Live Demo</a> : A Live Demo site for demonstrating DD Insight functionality. The site shows dynamically changing network quality status of Korean cellular networks by analyzing logs obtained from apps for services provided by AirPlug, Inc.</li>
+<ul>
+<li>
+<a href="http://github.com/ddinsight/dd-collector">dd-collector</a> : Collector Front-end Framework</li>
+<li>
+<a href="http://github.com/ddinsight/dd-streamworks">dd-streamworks</a> : Real-time Processing &amp; Job engine</li>
+<li>
+<a href="http://github.com/ddinsight/dd-analytics">dd-analytics</a> : Batch Processing &amp; Presentation</li>
+</ul>
+</li>
+<li>
+<a href="http://github.com/ddinsight/dd-collector/ddapp">Tester App</a> : An android app for testing operation of DD Insight framework</li>
+<li>
+<a href="http://demo.ddinsight.io">Live Demo</a> : A Live Demo site for demonstrating DD Insight functionality. The site shows dynamically changing network quality status of Korean cellular networks by analyzing logs obtained from apps for services provided by AirPlug, Inc.</li>
 </ul>
 
-<h2 id="use-cases">Use Cases</h2>
+<h2>
+<a id="use-cases" class="anchor" href="#use-cases" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use Cases</h2>
 
 <hr>
 
@@ -59,7 +102,7 @@ The presentation module is mainly for map-based visualization of output of QoE a
 
 <p><em>Network monitoring</em></p>
 
-<p>Based on logs obtained from mobile devices of app users all over the world, you can monitor what’s happening network-wise anywhere in the world.</p>
+<p>Based on logs obtained from mobile devices of app users all over the world, you can monitor what's happening network-wise anywhere in the world.</p>
 
 <p><em>Network actions</em></p>
 
@@ -67,7 +110,7 @@ The presentation module is mainly for map-based visualization of output of QoE a
 
 <p><em>Customer experience management</em></p>
 
-<p>You can not only provide proper measures for customers who’s already encountered the network issues but also provide proactive measures to prevent potential problems for customers deemed at risk of experiencing them.</p>
+<p>You can not only provide proper measures for customers who's already encountered the network issues but also provide proactive measures to prevent potential problems for customers deemed at risk of experiencing them.</p>
 
 <p><strong>Applicable Services</strong></p>
 
@@ -86,3 +129,26 @@ The presentation module is mainly for map-based visualization of output of QoE a
 <p><em>Connected-car services</em></p>
 
 <p>Network problems while using telematics services and infotainment services can be monitored and analyzed through collection of logs from corresponding devices.</p>
+        </section>
+
+        <aside id="sidebar">
+
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-70234859-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
